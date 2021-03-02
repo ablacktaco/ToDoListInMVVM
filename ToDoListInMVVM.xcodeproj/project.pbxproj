@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B3B0935225E817D7004333EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0935125E817D7004333EF /* AppDelegate.swift */; };
 		B3B0935425E817D7004333EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0935325E817D7004333EF /* SceneDelegate.swift */; };
-		B3B0935625E817D7004333EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0935525E817D7004333EF /* ViewController.swift */; };
-		B3B0935925E817D7004333EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B0935725E817D7004333EF /* Main.storyboard */; };
 		B3B0935B25E817DD004333EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B0935A25E817DD004333EF /* Assets.xcassets */; };
 		B3B0935E25E817DD004333EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B0935C25E817DD004333EF /* LaunchScreen.storyboard */; };
+		B3B0936825E81F72004333EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B3B0936725E81F72004333EF /* SnapKit */; };
+		B3B0936C25E8201A004333EF /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B0936B25E8201A004333EF /* Icon.xcassets */; };
+		B3B0937925E8221B004333EF /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0937825E8221B004333EF /* Constance.swift */; };
+		B3B0937D25E82281004333EF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0937C25E82281004333EF /* MainNavigationController.swift */; };
+		B3B0938125E8235E004333EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0938025E8235E004333EF /* MainViewController.swift */; };
+		B3C0453025EE46B200900D71 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0452F25EE46B200900D71 /* ToDoViewModel.swift */; };
+		B3C9604B25E8278500D9B427 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9604A25E8278500D9B427 /* ListViewModel.swift */; };
+		B3C9604E25E82DC800D9B427 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9604D25E82DC800D9B427 /* ToDoModel.swift */; };
+		B3C9605125E82DFE00D9B427 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9605025E82DFE00D9B427 /* ToDoList.swift */; };
+		B3C9605425EE1CF500D9B427 /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9605325EE1CF500D9B427 /* ToDoListCell.swift */; };
+		B3C9605925EE1DB300D9B427 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = B3C9605825EE1DB300D9B427 /* Reusable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3B0934E25E817D7004333EF /* ToDoListInMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListInMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B0935125E817D7004333EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B0935325E817D7004333EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3B0935525E817D7004333EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3B0935825E817D7004333EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3B0935A25E817DD004333EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3B0935D25E817DD004333EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3B0935F25E817DD004333EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B0936B25E8201A004333EF /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
+		B3B0937825E8221B004333EF /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		B3B0937C25E82281004333EF /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B3B0938025E8235E004333EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3C0452F25EE46B200900D71 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		B3C9604A25E8278500D9B427 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		B3C9604D25E82DC800D9B427 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		B3C9605025E82DFE00D9B427 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		B3C9605325EE1CF500D9B427 /* ToDoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B0936825E81F72004333EF /* SnapKit in Frameworks */,
+				B3C9605925EE1DB300D9B427 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,86 @@
 		B3B0935025E817D7004333EF /* ToDoListInMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B3B0935125E817D7004333EF /* AppDelegate.swift */,
-				B3B0935325E817D7004333EF /* SceneDelegate.swift */,
-				B3B0935525E817D7004333EF /* ViewController.swift */,
-				B3B0935725E817D7004333EF /* Main.storyboard */,
-				B3B0935A25E817DD004333EF /* Assets.xcassets */,
-				B3B0935C25E817DD004333EF /* LaunchScreen.storyboard */,
+				B3B0937525E821BE004333EF /* Application */,
+				B3B0936A25E81FF1004333EF /* Supporting File */,
 				B3B0935F25E817DD004333EF /* Info.plist */,
 			);
 			path = ToDoListInMVVM;
+			sourceTree = "<group>";
+		};
+		B3B0936A25E81FF1004333EF /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				B3B0935A25E817DD004333EF /* Assets.xcassets */,
+				B3B0936B25E8201A004333EF /* Icon.xcassets */,
+				B3B0935C25E817DD004333EF /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		B3B0937125E82115004333EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9605025E82DFE00D9B427 /* ToDoList.swift */,
+				B3C9604D25E82DC800D9B427 /* ToDoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3B0937225E82123004333EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9605B25EE22C000D9B427 /* Cell */,
+				B3B0938025E8235E004333EF /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3B0937325E82129004333EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9604A25E8278500D9B427 /* ListViewModel.swift */,
+				B3C0452F25EE46B200900D71 /* ToDoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3B0937525E821BE004333EF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B3B0937B25E82231004333EF /* Main */,
+				B3B0937125E82115004333EF /* Model */,
+				B3B0937225E82123004333EF /* View */,
+				B3B0937325E82129004333EF /* ViewModel */,
+				B3B0937625E821F8004333EF /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B3B0937625E821F8004333EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3B0937825E8221B004333EF /* Constance.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3B0937B25E82231004333EF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3B0935125E817D7004333EF /* AppDelegate.swift */,
+				B3B0935325E817D7004333EF /* SceneDelegate.swift */,
+				B3B0937C25E82281004333EF /* MainNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3C9605B25EE22C000D9B427 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9605325EE1CF500D9B427 /* ToDoListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,10 @@
 			dependencies = (
 			);
 			name = ToDoListInMVVM;
+			packageProductDependencies = (
+				B3B0936725E81F72004333EF /* SnapKit */,
+				B3C9605825EE1DB300D9B427 /* Reusable */,
+			);
 			productName = ToDoListInMVVM;
 			productReference = B3B0934E25E817D7004333EF /* ToDoListInMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +203,10 @@
 				Base,
 			);
 			mainGroup = B3B0934525E817D7004333EF;
+			packageReferences = (
+				B3B0936625E81F72004333EF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B3C9605725EE1DB300D9B427 /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = B3B0934F25E817D7004333EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +223,7 @@
 			files = (
 				B3B0935E25E817DD004333EF /* LaunchScreen.storyboard in Resources */,
 				B3B0935B25E817DD004333EF /* Assets.xcassets in Resources */,
-				B3B0935925E817D7004333EF /* Main.storyboard in Resources */,
+				B3B0936C25E8201A004333EF /* Icon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +234,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B0935625E817D7004333EF /* ViewController.swift in Sources */,
+				B3C9604E25E82DC800D9B427 /* ToDoModel.swift in Sources */,
+				B3C0453025EE46B200900D71 /* ToDoViewModel.swift in Sources */,
+				B3B0937D25E82281004333EF /* MainNavigationController.swift in Sources */,
+				B3C9605425EE1CF500D9B427 /* ToDoListCell.swift in Sources */,
+				B3B0937925E8221B004333EF /* Constance.swift in Sources */,
 				B3B0935225E817D7004333EF /* AppDelegate.swift in Sources */,
 				B3B0935425E817D7004333EF /* SceneDelegate.swift in Sources */,
+				B3B0938125E8235E004333EF /* MainViewController.swift in Sources */,
+				B3C9604B25E8278500D9B427 /* ListViewModel.swift in Sources */,
+				B3C9605125E82DFE00D9B427 /* ToDoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3B0935725E817D7004333EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3B0935825E817D7004333EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B3B0935C25E817DD004333EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +437,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3B0936625E81F72004333EF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		B3C9605725EE1DB300D9B427 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3B0936725E81F72004333EF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B0936625E81F72004333EF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B3C9605825EE1DB300D9B427 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C9605725EE1DB300D9B427 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3B0934625E817D7004333EF /* Project object */;
 }
