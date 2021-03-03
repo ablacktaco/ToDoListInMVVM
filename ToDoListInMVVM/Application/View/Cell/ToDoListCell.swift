@@ -10,6 +10,23 @@ import Reusable
 
 class ToDoListCell: UITableViewCell, Reusable {
     
+    private let checkedStateImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.tintColor = Color.main
+        imageView.snp.makeConstraints { (maker) in
+            maker.width.height.equalTo(24)
+        }
+        return imageView
+    }()
+    
+    private lazy var toDoTextField: UITextField = {
+        let textField = UITextField()
+        textField.textColor = Color.title
+        textField.font = UIFont.preferredFont(forTextStyle: .body)
+        textField.delegate = self
+        return textField
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -20,13 +37,28 @@ class ToDoListCell: UITableViewCell, Reusable {
     }
     
     private func setup() {
-        imageView?.tintColor = Color.main
-        textLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+        self.selectionStyle = .none
+        let stackView = UIStackView(arrangedSubviews: [checkedStateImageView, toDoTextField])
+        stackView.spacing = 16
+        contentView.addSubview(stackView)
+        stackView.snp.makeConstraints { (maker) in
+            maker.center.equalToSuperview()
+            maker.leading.equalTo(16)
+        }
     }
     
     func setdata(viewModel: ToDoViewModel) {
-        imageView?.image = viewModel.image
-        textLabel?.text = viewModel.title
+        checkedStateImageView.image = viewModel.image
+        toDoTextField.text = viewModel.title
+    }
+    
+}
+
+extension ToDoListCell: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }

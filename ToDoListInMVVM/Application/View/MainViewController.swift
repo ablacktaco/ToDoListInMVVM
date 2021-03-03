@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(cellType: ToDoListCell.self)
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 56, bottom: 0, right: 0)
         tableView.tableFooterView = UIView()
         return tableView
     }()
@@ -29,13 +30,13 @@ class MainViewController: UIViewController {
     
     private func setup() {
         navigationItem.title = "TO DO"
-        view.addSubview(toDoListTableView)
-        let addImage = UIImage(named: "plus")
+        let addImage = UIImage(systemName: "plus")
         let addBarButtonItem = UIBarButtonItem(image: addImage, style: .plain, target: self, action: nil)
         navigationItem.rightBarButtonItem = addBarButtonItem
     }
     
     private func setConstraits() {
+        view.addSubview(toDoListTableView)
         toDoListTableView.snp.makeConstraints { (maker) in
             maker.top.leading.bottom.trailing.equalToSuperview()
         }
@@ -52,7 +53,6 @@ extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ToDoListCell = tableView.dequeueReusableCell(for: indexPath)
         cell.setdata(viewModel: viewModel.lists[indexPath.row])
-        cell.selectionStyle = .none
         return cell
     }
     

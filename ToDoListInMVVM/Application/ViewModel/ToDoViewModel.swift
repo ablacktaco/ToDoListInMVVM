@@ -14,7 +14,7 @@ class ToDoViewModel {
     
     init(model: ToDoModel) {
         self.title = model.title
-        self.image = UIImage(named: model.isChecked ? "checked" : "unchecked") ?? UIImage()
+        self.image = UIImage(systemName: model.isChecked ? "checkmark.square.fill" : "square") ?? UIImage()
     }
     
 }
