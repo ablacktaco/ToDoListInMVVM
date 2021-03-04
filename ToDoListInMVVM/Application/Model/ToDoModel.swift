@@ -9,7 +9,7 @@ import Foundation
 
 struct ToDoModel: Codable {
     
-    let title: String
-    let isChecked: Bool
+    var title: String
+    var isChecked: Bool
     
 }

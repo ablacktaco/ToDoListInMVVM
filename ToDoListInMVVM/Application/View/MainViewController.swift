@@ -31,8 +31,9 @@ class MainViewController: UIViewController {
     private func setup() {
         navigationItem.title = "TO DO"
         let addImage = UIImage(systemName: "plus")
-        let addBarButtonItem = UIBarButtonItem(image: addImage, style: .plain, target: self, action: nil)
+        let addBarButtonItem = UIBarButtonItem(image: addImage, style: .plain, target: self, action: #selector(addToDo))
         navigationItem.rightBarButtonItem = addBarButtonItem
+        viewModel.delegate = self
     }
     
     private func setConstraits() {
@@ -40,6 +41,10 @@ class MainViewController: UIViewController {
         toDoListTableView.snp.makeConstraints { (maker) in
             maker.top.leading.bottom.trailing.equalToSuperview()
         }
+    }
+    
+    @objc func addToDo() {
+        viewModel.add()
     }
 
 }
@@ -59,6 +64,31 @@ extension MainViewController: UITableViewDataSource {
 }
 
 extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.changeState(indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete: viewModel.delete(indexPath.row)
+        default:      break
+        }
+    }
+    
+}
+
+extension MainViewController: ListViewModelDelegate {
+    
+    func update(_ mode: UpdateMode) {
+        switch mode {
+        case .delete(let index):
+            toDoListTableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .fade)
+        default:
+            toDoListTableView.reloadData()
+        }
+    }
+    
     
     
     
